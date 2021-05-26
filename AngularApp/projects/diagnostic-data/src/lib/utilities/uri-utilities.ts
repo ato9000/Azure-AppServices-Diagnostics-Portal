@@ -10,4 +10,19 @@ export class UriUtilities {
     static buildSlotLink(resourceUri: string, isTargetingPreview: boolean): string {
         return `https://portal.azure.com/?websitesextension_ext=asd.ispreview%3D${isTargetingPreview}#@microsoft.onmicrosoft.com/resource/${StringUtilities.TrimBoth(resourceUri, '/')}/troubleshoot`;
     }
+    
+    static removeQueryParams(allQueryParams: { [key: string]: any }, removeQueryList: string[]) {
+        const allQueryParamKeys = Object.keys(allQueryParams);
+        const queryParams = {};
+        for(const key of allQueryParamKeys){
+            if(removeQueryList.findIndex(q => q.toLowerCase() === key.toLowerCase()) === -1){
+                queryParams[key] = allQueryParams[key];
+            }
+        }
+        return queryParams;
+    }
+
+    static removeChildDetectorStartAndEndTime(allQueryParams: { [key: string]: any }) {
+        return this.removeQueryParams(allQueryParams,["startTimeChildDetector","endTimeChildDetector"]);
+    }
 }
