@@ -268,7 +268,8 @@ export class SideNavComponent implements OnInit {
     // if (this.gists.findIndex(g => g.label === gistCategory.label) < 0) {
     //   this.gists.unshift(gistCategory);
     // }
-    this.topList = [createGistItem,yourGists];
+    // this.topList = [createGistItem,yourGists];
+    this.topList = [yourGists];
   }
 
 
@@ -375,7 +376,8 @@ export class SideNavComponent implements OnInit {
       },
       () => { },
       "", true, [], "");
-    this.topList = [createNewDetector, yourDetectors];
+    // this.topList = [createNewDetector, yourDetectors];
+    this.topList = [yourDetectors];
   }
 
   doesMatchCurrentRoute(expectedRoute: string) {
