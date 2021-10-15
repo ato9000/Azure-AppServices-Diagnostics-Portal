@@ -50,37 +50,37 @@ export class L1SideNavComponent implements OnInit {
         }
       ]
     },
-    {
-      type: L1SideNavItemType.Develop,
-      displayName: "Develop",
-      iconPath: `${iconBasePath}/develop.svg`,
-      subItems: [
-        {
-          type: L1SideNavItemType.Develop_Detectors,
-          displayName: "Detectors",
-          iconPath: `${iconBasePath}/develop_detectors.svg`,
-          click: () => {
-            this._applensGlobal.openL2SideNavSubject.next(L2SideNavType.Develop_Detectors);
-          }
-        },
-        {
-          type: L1SideNavItemType.Gits,
-          displayName: "Code Library (Gists)",
-          iconPath: `${iconBasePath}/gists.svg`,
-          click: () => {
-            this._applensGlobal.openL2SideNavSubject.next(L2SideNavType.Gits);
-          }
-        },
-        {
-          type: L1SideNavItemType.Docs,
-          displayName: "Documentation",
-          iconPath: `${iconBasePath}/docs.svg`,
-          click: () => {
-            this.navigateTo("/docs");
-          }
-        }
-      ]
-    },
+    // {
+    //   type: L1SideNavItemType.Develop,
+    //   displayName: "Develop",
+    //   iconPath: `${iconBasePath}/develop.svg`,
+    //   subItems: [
+    //     {
+    //       type: L1SideNavItemType.Develop_Detectors,
+    //       displayName: "Detectors",
+    //       iconPath: `${iconBasePath}/develop_detectors.svg`,
+    //       click: () => {
+    //         this._applensGlobal.openL2SideNavSubject.next(L2SideNavType.Develop_Detectors);
+    //       }
+    //     },
+    //     {
+    //       type: L1SideNavItemType.Gits,
+    //       displayName: "Code Library (Gists)",
+    //       iconPath: `${iconBasePath}/gists.svg`,
+    //       click: () => {
+    //         this._applensGlobal.openL2SideNavSubject.next(L2SideNavType.Gits);
+    //       }
+    //     },
+    //     {
+    //       type: L1SideNavItemType.Docs,
+    //       displayName: "Documentation",
+    //       iconPath: `${iconBasePath}/docs.svg`,
+    //       click: () => {
+    //         this.navigateTo("/docs");
+    //       }
+    //     }
+    //   ]
+    // },
   ];
   currentHightLightItem: L1SideNavItemType = null;
   showDialog: boolean = false;
