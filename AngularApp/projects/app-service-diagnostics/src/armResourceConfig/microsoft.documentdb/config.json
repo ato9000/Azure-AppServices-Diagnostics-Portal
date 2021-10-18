@@ -22,7 +22,7 @@
             "name": "Overview",
             "description": "Overview",
             "keywords": [
-                "Overview"
+                "SDK Version"
             ],
             "color": "rgb(186, 211, 245)",
             "createFlowForCategory": false,
