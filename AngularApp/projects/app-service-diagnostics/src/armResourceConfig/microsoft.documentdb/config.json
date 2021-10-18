@@ -1,0 +1,46 @@
+{
+    "homePageText": {
+        "title": "Azure Cosmos DB Diagnostics",
+        "description": "Use Cosmos DB Diagnostics:",
+        "searchBarPlaceHolder": "Search Azure Cosmos DB"
+    },
+    "matchRegEx": "/Microsoft.DocumentDB/databaseAccounts/",
+    "searchSuffix": "Cosmos",
+    "azureServiceName": "Azure Cosmos DB",
+    "armApiConfig": {
+        "armApiVersion": "2021-07-01-preview"
+    },
+    "isSearchEnabled": true,
+    "keystoneDetectorId": "",
+    "liveChatConfig": {
+        "isApplicableForLiveChat": false,
+        "supportTopicIds": []
+    },
+    "categories": [
+        {
+            "id": "Control Plane",
+            "name": "Control Plane",
+            "description": "Investigate issues with the control plane of your cluster. Find out the common causes and investigate in detail.",
+            "keywords": [
+                "Control Plane",
+                "Availability"
+            ],
+            "color": "rgb(186, 211, 245)",
+            "createFlowForCategory": false,
+            "chatEnabled": false
+        },
+        {
+            "id": "Customer",
+            "name": "Customer",
+            "description": "List of published materials that may be helpful in resolving the issue.",
+            "keywords": [
+                "Resources"
+            ],
+            "color": "rgb(249, 213, 180)",
+            "createFlowForCategory": true,
+            "chatEnabled": false
+        }
+    ],
+    "queryLinks": [],
+    "pesId": "15585"
+}
