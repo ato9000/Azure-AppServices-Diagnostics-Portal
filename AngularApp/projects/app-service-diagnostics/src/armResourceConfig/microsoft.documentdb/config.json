@@ -20,7 +20,7 @@
         {
             "id": "Overview",
             "name": "Overview",
-            "description": "Overview",
+            "description": "Investigate common issues on your Cosmos DB account.",
             "keywords": [
                 "SDK Version"
             ],
