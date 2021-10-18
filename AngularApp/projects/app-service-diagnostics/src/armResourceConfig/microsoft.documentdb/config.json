@@ -2,7 +2,7 @@
     "homePageText": {
         "title": "Azure Cosmos DB Diagnostics",
         "description": "Use Azure Cosmos DB Diagnostics to investigate performance improvements and troubleshoot issues by running interactive checks on your account.",
-        "searchBarPlaceHolder": "Search Azure Cosmos DB"
+        "searchBarPlaceHolder": "Search a keyword that best describes your issue"
     },
     "matchRegEx": "/Microsoft.DocumentDB/databaseAccounts/",
     "searchSuffix": "Cosmos",
